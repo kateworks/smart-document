@@ -1,0 +1,23 @@
+.background {
+  background-blend-mode: normal, lighten;
+  background-size: 100%, cover, cover;
+  background-position: center, 0% 0%, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-origin: border-box, border-box, border-box;
+}
+
+.background_02 {
+  background-image:
+    linear-gradient(170deg, rgba(121, 10, 161, 0.7) 25%, rgba(15, 77, 177, 0.9)),
+    url(../images/background-02.jpg),
+    url(../images/sky-03.jpg);
+}
+
+.background_01 {
+  background-image:
+    linear-gradient(170deg, rgba(121, 10, 161, 0.7) 25%, rgba(15, 77, 177, 0.9)),
+    url(../images/background-01.jpg),
+    url(../images/sky-03.jpg);
+}
+
+

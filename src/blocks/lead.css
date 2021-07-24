@@ -1,0 +1,48 @@
+.lead {
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead__text-block {
+  width: 90%;
+  text-align: center;
+}
+
+.lead__title {
+  padding-bottom: 40px;
+  margin: 0.8em 0;
+
+  font-size: calc(min(36px, 5vmin));
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.45;
+  text-align: center;
+  color: #fff; 
+}
+
+.lead__subtitle {
+  text-align: center;
+  color: #fff;
+}
+
+.lead__button {
+  display: inline-block;
+  padding: 3vmin;
+  margin-top: 40px;
+
+  background-color: #fff;
+  border-radius: 3px;
+  color: rgb(4, 36, 87);
+
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.lead__button:hover {
+  cursor: pointer;
+  opacity: .7;
+}

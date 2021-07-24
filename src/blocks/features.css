@@ -1,0 +1,140 @@
+.features {
+  min-height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__title {
+  width: 70%;
+  margin: 0.85em auto;
+}
+
+.features__subtitle {
+  width: 70%;
+  margin: 0.85em auto;
+  line-height: 1.5;
+}
+
+.features__list {
+  list-style-type: none;
+  padding: 20px;
+  padding-top: 40px;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.features__item, 
+.features__item * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.features__item {
+  padding: 20px;
+  padding-bottom: 30px;
+
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+
+  color: #fff;
+}
+
+.features__text-block {
+  padding-left: 20px;
+}
+
+.features__image {
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+}
+
+.features__text-title {
+  padding-bottom: 15px;
+
+  font-size: calc(max(min(24px, 4vmin), 16px));
+  font-weight: 600;
+}
+
+.features__text {
+  font-size: calc(max(min(18px, 3vmin), 14px));
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1050px) {
+  .features__title {
+    width: 94%;
+  }
+
+  .features__subtitle {
+    width: 94%;
+  }
+
+  .features__item {
+    padding: 10px;
+    padding-bottom: 20px;  
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .features__list {
+    padding: 5px;
+    padding-top: 40px;
+  }
+
+  .features__item {
+    padding: 5px;
+    padding-bottom: 10px;
+    flex: 1 1 250px;
+  }
+
+  .features__image {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .features__text-title {
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .features__text {
+    font-size: 12px;
+  }
+} 
+
+@media 
+screen and (max-width: 370px),
+screen and (max-height: 370px) {
+  .features__image {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 22px;
+  }
+
+  .features__text-block {
+    padding-left: 10px;
+  }
+
+  .features__text {
+    font-size: 10px;
+  }
+}
+
+

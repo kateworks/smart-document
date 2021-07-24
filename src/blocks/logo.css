@@ -1,0 +1,29 @@
+.logo {
+  background-image: url(../images/logo/logo-svg-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.logo_place_header {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+
+  transition: 0.5s ease-in-out;
+  flex: none;
+}
+
+.logo_place_header:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.logo_place_footer {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}

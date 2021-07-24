@@ -1,0 +1,76 @@
+@keyframes button-jump {
+  0% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -7px); }
+  55%  { transform: translate(-50%, -7px); }
+  100% { transform: translate(-50%, 0); }
+}
+
+.move, .move__button {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+}
+
+.move {
+  position: absolute;
+  bottom: 30px;
+  
+  animation-name: button-jump;
+  animation-delay: 0s;
+  animation-duration: 1.7s;
+  animation-timing-function: ease;
+  animation-iteration-count: 10;
+}
+
+.move_center {
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.move_left {
+  left: 50px;
+}
+
+.move_right {
+  right: 50px;
+}
+
+.move__button {
+  width: 30px;
+  height: 30px;
+  padding: 10px;  
+
+  outline: none;
+  box-shadow: none;
+  border: solid #fff;
+
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.move__button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.move__button_down {
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg) skew(-10deg, -10deg);  
+}
+
+.move__button_up {
+  border-width: 3px 0 0 3px;
+  transform: rotate(45deg) skew(-10deg, -10deg);  
+}
+
+@media screen and ( max-width: 400px), screen and (max-height: 400px) {
+  .move {
+    bottom: 10px;
+  }
+
+  .move__button {
+    width: 20px;
+    height: 20px;
+  }
+}

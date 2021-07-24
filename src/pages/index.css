@@ -1,1 +1,22 @@
+@import url(../fonts/fonts.css);
+
 @import url(../blocks/root.css);
+@import url(../blocks/page.css);
+@import url(../blocks/background.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/title.css);
+@import url(../blocks/logo.css);
+
+@import url(../blocks/header.css);
+@import url(../blocks/home.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/features.css);
+@import url(../blocks/props.css);
+
+@import url(../blocks/prices.css);
+@import url(../blocks/card.css);
+@import url(../blocks/license.css);
+
+@import url(../blocks/order.css);
+@import url(../blocks/form.css);
+@import url(../blocks/footer.css);

@@ -1,0 +1,45 @@
+{
+  "name": "smart-document",
+  "version": "1.0.0",
+  "description": "Целевая страница для проекта SmartDocument",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kateworks/smart-document.git"
+  },
+  "author": "Ekaterina Pozhidaeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kateworks/smart-document/issues"
+  },
+  "homepage": "https://github.com/kateworks/smart-document#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "cssnano": "^5.0.8",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss-loader": "^6.1.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.16.2",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2"
+  }
+}
