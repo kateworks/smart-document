@@ -1,1 +1,1 @@
-# smart-document
+# Smart Document
